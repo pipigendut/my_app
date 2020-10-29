@@ -28,11 +28,11 @@ install_plugin Capistrano::SCM::Git
 
 require "capistrano/rbenv"
 set :rbenv_type, :user
-set :rbenv_ruby, '2.7.1p83'
+set :rbenv_ruby, '2.7.1'
 
 require 'capistrano/rails'
 require "capistrano/bundler"
-require 'capistrano/passenger'
+# require 'capistrano/passenger'
 
 # require "capistrano/chruby"
 # require "capistrano/rails/assets"
