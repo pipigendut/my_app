@@ -11,7 +11,12 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
-
+  # config.action_cable.allow_same_origin_as_host = true
+  # config.action_cable.url = 'ws://localhost:3000/cable'
+  # config.action_cable.allowed_request_origins = [%r{https?://\S+}]
+  # config.action_cable.allowed_request_origins = [ /http:\/\/.*/, /https:\/\/.*/ ]
+  # config.action_cable.allowed_request_origins = [ '*' ]
+  config.action_cable.allowed_request_origins = ['http://localhost:3000', 'file://']
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
   if Rails.root.join('tmp', 'caching-dev.txt').exist?
