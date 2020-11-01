@@ -21,6 +21,9 @@ gem 'redis', '~> 4.2', '>= 4.2.2'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Authentication
+gem 'devise'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -28,13 +31,14 @@ gem 'redis', '~> 4.2', '>= 4.2.2'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
+  gem 'pry', '~> 0.13.1'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   gem 'foreman'
-  
+
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.2'
@@ -45,6 +49,9 @@ group :development do
   gem 'capistrano', '~> 3.14', '>= 3.14.1'
   gem 'capistrano-rails', '~> 1.6', '>= 1.6.1'
   gem 'capistrano-rbenv', '~> 2.2'
+
+  # Atrributes Model
+  gem 'annotate'
 end
 
 group :test do
