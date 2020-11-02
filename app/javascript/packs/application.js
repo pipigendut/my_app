@@ -3,7 +3,15 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import '../stylesheets/application'
+import '../assets/stylesheets/application'
+import '../assets/stylesheets/default'
+// import '../assets/stylesheets/fonts'
+import '../assets/stylesheets/home'
+import '../assets/stylesheets/layout'
+import '../assets/stylesheets/magnific-popup'
+import '../assets/stylesheets/media-queries'
+
+import init from '../utils/init'
 
 require("@rails/ujs").start()
 require("turbolinks").start()
