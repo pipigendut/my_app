@@ -40,24 +40,24 @@
 	var sections = $("section");
 	var navigation_links = $("#nav-wrap a");
 
-	sections.waypoint({
-
-      handler: function(event, direction) {
-
-		   var active_section;
-
-			active_section = $(this);
-			if (direction === "up") active_section = active_section.prev();
-
-			var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
-
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
-
-		},
-		offset: '35%'
-
-	});
+	// sections.waypoint({
+  //
+  //     handler: function(event, direction) {
+  //
+	// 	   var active_section;
+  //
+	// 		active_section = $(this);
+	// 		if (direction === "up") active_section = active_section.prev();
+  //
+	// 		var active_link = $('#nav-wrap a[href="#' + active_section.attr("id") + '"]');
+  //
+  //        navigation_links.parent().removeClass("current");
+	// 		active_link.parent().addClass("current");
+  //
+	// 	},
+	// 	offset: '35%'
+  //
+	// });
 
 
 /*----------------------------------------------------*/
@@ -102,20 +102,20 @@
 /*	Modal Popup
 ------------------------------------------------------*/
 
-    $('.item-wrap a').magnificPopup({
-
-       type:'inline',
-       fixedContentPos: false,
-       removalDelay: 200,
-       showCloseBtn: false,
-       mainClass: 'mfp-fade'
-
-    });
-
-    $(document).on('click', '.popup-modal-dismiss', function (e) {
-    		e.preventDefault();
-    		$.magnificPopup.close();
-    });
+    // $('.item-wrap a').magnificPopup({
+    //
+    //    type:'inline',
+    //    fixedContentPos: false,
+    //    removalDelay: 200,
+    //    showCloseBtn: false,
+    //    mainClass: 'mfp-fade'
+    //
+    // });
+    //
+    // $(document).on('click', '.popup-modal-dismiss', function (e) {
+    // 		e.preventDefault();
+    // 		$.magnificPopup.close();
+    // });
 
 
 /*----------------------------------------------------*/
@@ -161,7 +161,7 @@
                $('#image-loader').fadeOut();
                $('#message-warning').hide();
                $('#contactForm').fadeOut();
-               $('#message-success').fadeIn();   
+               $('#message-success').fadeIn();
             }
             // There was an error
             else {
@@ -178,11 +178,3 @@
 
 
 });
-
-
-
-
-
-
-
-
